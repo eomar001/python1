@@ -1,14 +1,11 @@
 # square.py
 #draw a square
 from turtle import*
+forward(200)
+right(90)
 forward(100)
-left(100)
+right(90)
+forward(200)
+right(90)
 forward(100)
-left(100)
-forward(100)
-left(100)
-forward(100)
-left(100)
-circle(60,50)
-dot(20)
 exitonclick()
