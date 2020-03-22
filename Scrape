@@ -1,0 +1,14 @@
+from bs4 import BeautifulSoup #need to install using pip install lxml, beautifulsoup5, html5lib, requests
+import requests. # also upgarde pip 
+
+with open ('simpleSite.html','r') as html_file:  #remember the local path
+	soup = BeautifulSoup(html_file,'lxml')
+#print(soup.prettify()). # make sure everything is wroking fine  as the method name suggests it displays the output in html format
+match= soup.title.text # prints the text only not the whole tag
+print (match)
+article= soup.find('div',class_='article') #only look for div tag don't include child tags as well
+print(article)
+headline=article.h2.a.text #anchor tag
+
+
+
